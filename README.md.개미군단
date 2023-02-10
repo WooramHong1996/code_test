@@ -1,0 +1,25 @@
+# code_test
+
+class Solution {
+    public int solution(int hp) {
+        int answer = 0;
+        int captin = 5;
+        int soldier = 3;
+        int ant = 1;
+        while(hp>0){
+            if(hp>=captin) {
+                hp-=captin;
+                answer++;
+                }
+            else if(hp>=soldier) {
+                hp-=soldier;
+                answer++;
+                }
+            else {
+                hp-=ant;
+                answer++;
+                }
+        }
+        return answer;
+    }
+}
